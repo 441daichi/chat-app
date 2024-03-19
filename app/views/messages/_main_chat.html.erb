@@ -10,33 +10,7 @@
 </div>
 
 <div class="chat-log">
-  <div class="chat-content">
-    <div class="user-content">
-      <div class="user-name">
-        Tom
-      </div>
-      <div class="time">
-        2020/3/31(Wed) 12:43:30
-      </div>
-    </div>
-    <div class="chat-message">
-      おはよう
-    </div>
-  </div>
-
-  <div class="chat-content">
-    <div class="user-content">
-      <div class="user-name">
-        Tom
-      </div>
-      <div class="time">
-        2020/3/31(Wed) 12:43:30
-      </div>
-    </div>
-    <div class="chat-message">
-      こんばんは
-    </div>
-  </div>
+  <%= render partial: 'message', collection: @messages %>
 </div>
 
 <%# <div class="message">
